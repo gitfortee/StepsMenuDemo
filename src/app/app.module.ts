@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { StepsMenuComponent } from './steps-menu/steps-menu.component';
+import { PrimengComponentsModule } from './primeng.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StepsMenuComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PrimengComponentsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
